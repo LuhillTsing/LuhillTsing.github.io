@@ -75,6 +75,8 @@
           <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
         <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+        <!-- 添加切换模式按钮 -->
+        <button id="dark-mode-toggle" class="nav-icon" onclick="toggleDarkMode()">切换模式</button>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://luhilltsing.github.io"></form>
@@ -214,6 +216,8 @@
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+  <!-- 添加 dark-mode.js 脚本 -->
+  <script src="/js/dark-mode.js"></script>
 </footer>
 
     </div>

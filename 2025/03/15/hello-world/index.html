@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="Welcome to this blog by LuhillTsing . This is the first article published on this website .欢迎来到 Luhill Tsing 开发的博客，这是在此网站发布的第一篇文章。我想，这个网站将成为见证我技术进步的承载体，记录我在互联网开发过程里的尝试。这是一个新奇的事物，说来有趣，我也是前几天才注册Github，跟">
 <meta property="og:type" content="article">
@@ -57,7 +57,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
 <script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
 
 
 
@@ -102,6 +104,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -110,11 +113,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/me/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-projects"><a href="/tags/projects/" rel="section"><i class="fa fa-folder fa-fw"></i>projects</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -253,7 +282,7 @@
     
     <div class="post-body" itemprop="articleBody"><p>Welcome to this blog by LuhillTsing . This is the first article published on this website .<br>欢迎来到 Luhill Tsing 开发的博客，这是在此网站发布的第一篇文章。<br>我想，这个网站将成为见证我技术进步的承载体，记录我在互联网开发过程里的尝试。<br>这是一个新奇的事物，说来有趣，我也是前几天才注册Github，跟随论坛前辈的帖子完成的这个博客的建设。我相信，我会在这个论坛学到很多东西。<br>在这个网站上，我会分享生活的点滴，这将成为了解我的一扇窗户。<br>我会在这里分享我的研究成果，无论是我喜欢的天文、金融或者计算机。<br>“志之所趋无远弗届 犯其至难图其致远。”<br>希望你们喜欢这里。</p>
 <p><img src="/images/01-xunjicar.png" alt="测试图片"><br>这是一张用来测试的图片，图中展示的是我正在开发的寻迹避障小车</p>
-<p>我的电子邮箱：<a href="mailto:&#x71;&#105;&#x6e;&#x67;&#108;&#x75;&#x68;&#105;&#108;&#x6c;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">qingluhill@qq.com</a><br><a href="mailto:&#x71;&#105;&#x6e;&#x67;&#108;&#117;&#x68;&#105;&#108;&#x6c;&#x40;&#113;&#113;&#46;&#x63;&#111;&#x6d;">Contact Me</a><br>欢迎你与我联系，分享有趣的事物。</p>
+<p>我的电子邮箱：<a href="mailto:&#113;&#105;&#x6e;&#x67;&#x6c;&#117;&#x68;&#x69;&#x6c;&#108;&#64;&#x71;&#113;&#46;&#99;&#111;&#109;">qingluhill@qq.com</a><br><a href="mailto:&#113;&#x69;&#110;&#103;&#x6c;&#117;&#104;&#x69;&#108;&#108;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">Contact Me</a><br>欢迎你与我联系，分享有趣的事物。</p>
 <p>这个网站的网址：luhilltsing.github.io<br><a href="https://luhilltsing.github.io/">My Blog</a></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 

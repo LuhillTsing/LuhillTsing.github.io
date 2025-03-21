@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>AboutMe</title>
+    <url>//about/me/</url>
+    <content><![CDATA[<h2 id="卿禄峰"><a href="#卿禄峰" class="headerlink" title="卿禄峰"></a>卿禄峰</h2><h2 id="QING-LUFENG"><a href="#QING-LUFENG" class="headerlink" title="QING LUFENG"></a>QING LUFENG</h2><h4 id="学生"><a href="#学生" class="headerlink" title="学生"></a>学生</h4><p>2005年5月出生于湖南邵阳，现居广东清远，嵌入式技术应用专业在校学生。</p>
+<p>阿瓦隆科技工作室（The Studio of Avalon of Science and Technology）创始人和主要负责人。</p>
+<p>HAM，设立有个人业余无线电台BA7KTB，拥有A类业余无线电台操作资质，电台台址位于清远清城。<br>天文爱好者，拥有一台102毫米折射式望远镜和一台50毫米双筒望远镜，天文观测站站址位于邵阳北塔。<br>波段交易者，正在构建一套自己的证券交易理论体系。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">志之所趋无远弗届，犯其至难图其致远</span><br></pre></td></tr></table></figure>
+
+<p>我喜欢在旅途中增长自己的视野，了解和体验不同的文化与民俗，感受独特地理环境下塑造的多样生活方式，品味广阔世界各具特色的美食。<br>我希望在短暂的生命里认识、感受、领略和体会这颗蓝色星球上的壮阔、美好、危险和挑战。</p>
+<p>欢迎你访问我的个人博客！<br>这对我来说是一扇面向全世界互联网用户展示自我的窗口，你可以使用任意一台接入互联网的设备打开此网站。</p>
+]]></content>
+      <categories>
+        <category>About</category>
+      </categories>
+      <tags>
+        <tag>About</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/03/15/hello-world/</url>
     <content><![CDATA[<p>Welcome to this blog by LuhillTsing . This is the first article published on this website .<br>欢迎来到 Luhill Tsing 开发的博客，这是在此网站发布的第一篇文章。<br>我想，这个网站将成为见证我技术进步的承载体，记录我在互联网开发过程里的尝试。<br>这是一个新奇的事物，说来有趣，我也是前几天才注册Github，跟随论坛前辈的帖子完成的这个博客的建设。我相信，我会在这个论坛学到很多东西。<br>在这个网站上，我会分享生活的点滴，这将成为了解我的一扇窗户。<br>我会在这里分享我的研究成果，无论是我喜欢的天文、金融或者计算机。<br>“志之所趋无远弗届 犯其至难图其致远。”<br>希望你们喜欢这里。</p>
 <p><img src="/images/01-xunjicar.png" alt="测试图片"><br>这是一张用来测试的图片，图中展示的是我正在开发的寻迹避障小车</p>
-<p>我的电子邮箱：<a href="mailto:&#113;&#105;&#110;&#103;&#x6c;&#117;&#x68;&#105;&#x6c;&#108;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#x6d;">qingluhill@qq.com</a><br><a href="mailto:&#x71;&#105;&#x6e;&#103;&#108;&#117;&#104;&#x69;&#108;&#108;&#x40;&#113;&#113;&#46;&#99;&#x6f;&#109;">Contact Me</a><br>欢迎你与我联系，分享有趣的事物。</p>
+<p>我的电子邮箱：<a href="mailto:&#x71;&#105;&#x6e;&#x67;&#108;&#x75;&#x68;&#105;&#108;&#x6c;&#64;&#113;&#113;&#x2e;&#99;&#111;&#109;">qingluhill@qq.com</a><br><a href="mailto:&#x71;&#105;&#x6e;&#x67;&#108;&#117;&#x68;&#105;&#108;&#x6c;&#x40;&#113;&#113;&#46;&#x63;&#111;&#x6d;">Contact Me</a><br>欢迎你与我联系，分享有趣的事物。</p>
 <p>这个网站的网址：luhilltsing.github.io<br><a href="https://luhilltsing.github.io/">My Blog</a></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -25,24 +43,6 @@
       </categories>
       <tags>
         <tag>Computer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AboutMe</title>
-    <url>//about/me/</url>
-    <content><![CDATA[<h2 id="卿禄峰"><a href="#卿禄峰" class="headerlink" title="卿禄峰"></a>卿禄峰</h2><h2 id="QING-LUFENG"><a href="#QING-LUFENG" class="headerlink" title="QING LUFENG"></a>QING LUFENG</h2><h4 id="学生"><a href="#学生" class="headerlink" title="学生"></a>学生</h4><p>2005年5月出生于湖南邵阳，现居广东清远，嵌入式技术应用专业在校学生。</p>
-<p>阿瓦隆科技工作室（The Studio of Avalon of Science and Technology）创始人和主要负责人。</p>
-<p>HAM，设立有个人业余无线电台BA7KTB，拥有A类业余无线电台操作资质，电台台址位于清远清城。<br>天文爱好者，拥有一台102毫米折射式望远镜和一台50毫米双筒望远镜，天文观测站站址位于邵阳北塔。<br>波段交易者，正在构建一套自己的证券交易理论体系。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">志之所趋无远弗届，犯其至难图其致远</span><br></pre></td></tr></table></figure>
-
-<p>我喜欢在旅途中增长自己的视野，了解和体验不同的文化与民俗，感受独特地理环境下塑造的多样生活方式，品味广阔世界各具特色的美食。<br>我希望在短暂的生命里认识、感受、领略和体会这颗蓝色星球上的壮阔、美好、危险和挑战。</p>
-<p>欢迎你访问我的个人博客！<br>这对我来说是一扇面向全世界互联网用户展示自我的窗口，你可以使用任意一台接入互联网的设备打开此网站。</p>
-]]></content>
-      <categories>
-        <category>About</category>
-      </categories>
-      <tags>
-        <tag>About</tag>
       </tags>
   </entry>
   <entry>

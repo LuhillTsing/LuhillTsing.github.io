@@ -58,7 +58,7 @@
 <p>通过多次测试和调试，确保小车在不同环境下能够稳定、准确地执行各项功能。整体设计思路以模块化、功能分离为原则，各个模块之间通过STM32F103C8T6核心板进行协调，实现智能小车的多功能、高可靠性运行。</p>
 <p><img src="/images/03-Xunji-fun.png" alt="小车核心系统设计"></p>
 <h2 id="2-2-硬件选择与理由"><a href="#2-2-硬件选择与理由" class="headerlink" title="2.2 硬件选择与理由"></a>2.2 硬件选择与理由</h2><ol>
-<li>STM32F103C8T6核心板  #需要修改<br>STM32F103C8T6核心板具有强大的处理能力和丰富的外设接口，适合用作主控单元。它具备高性能的ARM Cortex-M3处理器，可以处理复杂的路径跟踪、避障和无线通信算法。此外，其低功耗特性有助于延长电池续航时间。</li>
+<li>STM32F103C8T6核心板<br>STM32F103C8T6核心板具有强大的处理能力和丰富的外设接口，适合用作主控单元。它具备高性能的ARM Cortex-M3处理器，可以处理复杂的路径跟踪、避障和无线通信算法。此外，其低功耗特性有助于延长电池续航时间。</li>
 </ol>
 <p>引脚定义</p>
 <ol start="2">
@@ -68,7 +68,7 @@
 </li>
 <li><p>带电机轮子的小车底盘（自带TT电机）：<br> 带电机轮子的小车底盘提供了小车的机械结构，包含两个TT电机和轮子，构造坚固，能够承载所有电子元件。其设计紧凑，易于安装电机和传感器，适合实现小车的移动控制。</p>
 </li>
-<li><p>12V供电电池：<br>12V供电电池提供了稳定且充足的电源，支持小车的长时间运行。其高电压可以通过电源转换模块转换为适合各种电子元件的工作电压。</p>
+<li><p>9V供电电池：<br>9V供电电池提供了稳定且充足的电源，支持小车的长时间运行。其高电压可以通过电源转换模块转换为适合各种电子元件的工作电压。</p>
 </li>
 <li><p>蓝牙模块：<br>蓝牙模块用于实现无线控制，允许用户通过手机或遥控器发送指令。蓝牙通信方式使用方便、成本低、通信距离适中，非常适合用于小型智能设备的无线控制。</p>
 </li>
@@ -84,8 +84,8 @@
 </li>
 </ol>
 <h2 id="2-3-软件算法选择"><a href="#2-3-软件算法选择" class="headerlink" title="2.3 软件算法选择"></a>2.3 软件算法选择</h2><p>[空]</p>
-<h1 id="三、PCB设计与小车组装"><a href="#三、PCB设计与小车组装" class="headerlink" title="三、PCB设计与小车组装"></a>三、PCB设计与小车组装</h1><h2 id="3-1-电路原理图"><a href="#3-1-电路原理图" class="headerlink" title="3.1 电路原理图"></a>3.1 电路原理图</h2><p><img src="/images/05-XunjiCar-pcbwiring.png" alt="3-1 PCB原理图设计"> </p>
-<h2 id="3-2-pcb布线："><a href="#3-2-pcb布线：" class="headerlink" title="3.2 pcb布线："></a>3.2 pcb布线：</h2><p><img src="/images/04-XunjiCar-Schematic1.0fpcbg.png" alt="图3-1 电路图设计"> </p>
+<h1 id="三、PCB设计与小车组装"><a href="#三、PCB设计与小车组装" class="headerlink" title="三、PCB设计与小车组装"></a>三、PCB设计与小车组装</h1><h2 id="3-1-电路原理图"><a href="#3-1-电路原理图" class="headerlink" title="3.1 电路原理图"></a>3.1 电路原理图</h2><p><img src="/images/04-XunjiCar-Schematic1.0fpcbg.png" alt="图3-1 电路图设计"> </p>
+<h2 id="3-2-pcb布线："><a href="#3-2-pcb布线：" class="headerlink" title="3.2 pcb布线："></a>3.2 pcb布线：</h2><p><img src="/images/05-XunjiCar-pcbwiring.png" alt="3-1 PCB原理图设计"> </p>
 <p>本项目使用立创EDA绘制原理图。添加元件STM32F103C8T6核心板连接电源、地和所有需要的外设引脚。L298N电机驱动连接到TT电机和STM32F103C8T6的PWM控制引脚。五路灰度循迹模块连接到STM32F103C8T6的ADC输入或GPIO。9V供电电池:连接到电源转换模块。电源转换模块 输出为STM32F103C8T6核心板和其他低压组件供电。</p>
 <p>蓝牙模块:连接到STM32F103C8T6的UART引脚。超声波模块连接到STM32F103C8T6的GPIO。OLED屏幕连接到STM32F103C8T6的I2C或SPI引脚。LED灯连接到STM32F103C8T6的GPIO。蜂鸣器连接到STM32F103C8T6的GPIO。</p>
 <p>将所有元件按照设计要求连接，确保电源、地和信号线都连接正确。添加去耦电容（如0.1μF和10μF），尽量靠近STM32F103C8T6核心板的电源引脚，以减少电源噪声。</p>
@@ -95,7 +95,7 @@
 <p>使用设计软件的DRC功能检查所有的布线规则，包括最小走线宽度、走线间距、过孔尺寸等，确保设计没有违反规则。生成Gerber文件：包括顶层铜箔、底层铜箔、丝印层、阻焊层、钻孔文件等。生成BOM（物料清单）：列出所有元件的规格和数量。</p>
 <p>图3-2 PCB设计</p>
 <h2 id="3-3-实物焊接"><a href="#3-3-实物焊接" class="headerlink" title="3.3 实物焊接"></a>3.3 实物焊接</h2><p>将Gerber文件发送到PCB制造商制作PCB。收到PCB后，将元件焊接到PCB上，进行组装和测试。</p>
-<h1 id="四、软件底层设计"><a href="#四、软件底层设计" class="headerlink" title="四、软件底层设计"></a>四、软件底层设计</h1><h2 id="4-1-避障思路"><a href="#4-1-避障思路" class="headerlink" title="4.1 避障思路:"></a>4.1 避障思路:</h2><h2 id="4-2-循迹程序设计"><a href="#4-2-循迹程序设计" class="headerlink" title="4.2 循迹程序设计"></a>4.2 循迹程序设计</h2><h2 id="4-3跟随程序设计"><a href="#4-3跟随程序设计" class="headerlink" title="4.3跟随程序设计"></a>4.3跟随程序设计</h2><h2 id="4-4蓝牙遥控程序设计"><a href="#4-4蓝牙遥控程序设计" class="headerlink" title="4.4蓝牙遥控程序设计"></a>4.4蓝牙遥控程序设计</h2><h1 id="五、底层代码实现："><a href="#五、底层代码实现：" class="headerlink" title="五、底层代码实现："></a>五、底层代码实现：</h1><h1 id="六、测试"><a href="#六、测试" class="headerlink" title="六、测试"></a>六、测试</h1><h2 id="6-1-避障测试"><a href="#6-1-避障测试" class="headerlink" title="6.1 避障测试"></a>6.1 避障测试</h2><h2 id="6-2-寻迹测试"><a href="#6-2-寻迹测试" class="headerlink" title="6.2 寻迹测试"></a>6.2 寻迹测试</h2><p>参考资料：<br>[1] 妄北y. 基于STM32F103C8T6的智能小车设计：自动寻迹、避障与无线控制全解析 [EB&#x2F;OL]. CSDN博客, 2025-01-13. <a href="https://blog.csdn.net/qq_62634009/article/details/145074327">https://blog.csdn.net/qq_62634009/article/details/145074327</a>.</p>
+<h1 id="四、软件底层设计"><a href="#四、软件底层设计" class="headerlink" title="四、软件底层设计"></a>四、软件底层设计</h1><h2 id="4-1-避障思路"><a href="#4-1-避障思路" class="headerlink" title="4.1 避障思路:"></a>4.1 避障思路:</h2><h2 id="4-2-循迹程序设计"><a href="#4-2-循迹程序设计" class="headerlink" title="4.2 循迹程序设计"></a>4.2 循迹程序设计</h2><h2 id="4-3跟随程序设计"><a href="#4-3跟随程序设计" class="headerlink" title="4.3跟随程序设计"></a>4.3跟随程序设计</h2><h2 id="4-4蓝牙遥控程序设计"><a href="#4-4蓝牙遥控程序设计" class="headerlink" title="4.4蓝牙遥控程序设计"></a>4.4蓝牙遥控程序设计</h2><h1 id="五、底层代码实现"><a href="#五、底层代码实现" class="headerlink" title="五、底层代码实现"></a>五、底层代码实现</h1><h1 id="六、测试"><a href="#六、测试" class="headerlink" title="六、测试"></a>六、测试</h1><h2 id="6-1-避障测试"><a href="#6-1-避障测试" class="headerlink" title="6.1 避障测试"></a>6.1 避障测试</h2><h2 id="6-2-寻迹测试"><a href="#6-2-寻迹测试" class="headerlink" title="6.2 寻迹测试"></a>6.2 寻迹测试</h2><p>参考资料：<br>[1] 妄北y. 基于STM32F103C8T6的智能小车设计：自动寻迹、避障与无线控制全解析 [EB&#x2F;OL]. CSDN博客, 2025-01-13. <a href="https://blog.csdn.net/qq_62634009/article/details/145074327">https://blog.csdn.net/qq_62634009/article/details/145074327</a>.</p>
 <p>最后更新日期：2025-03-29</p>
 ]]></content>
       <categories>

@@ -21,25 +21,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="无限进步">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Luhill Tsing">
-<meta property="og:url" content="http://luhilltsing.github.io/categories/Projects/index.html">
+    <meta name="description" content="卿禄峰QING LUFENG学生2005年5月出生于湖南邵阳，现居广东清远，嵌入式技术应用专业在校学生。 阿瓦隆科技工作室（The Studio of Avalon of Science and Technology）创始人和主要负责人。 HAM，设立有个人业余无线电台BA7KTB，拥有A类业余无线电台操作资质，电台台址位于清远清城。天文爱好者，拥有一台102毫米折射式望远镜和一台50毫米双筒望远">
+<meta property="og:type" content="article">
+<meta property="og:title" content="1">
+<meta property="og:url" content="http://luhilltsing.github.io/qsl/0001">
 <meta property="og:site_name" content="Luhill Tsing">
-<meta property="og:description" content="无限进步">
+<meta property="og:description" content="卿禄峰QING LUFENG学生2005年5月出生于湖南邵阳，现居广东清远，嵌入式技术应用专业在校学生。 阿瓦隆科技工作室（The Studio of Avalon of Science and Technology）创始人和主要负责人。 HAM，设立有个人业余无线电台BA7KTB，拥有A类业余无线电台操作资质，电台台址位于清远清城。天文爱好者，拥有一台102毫米折射式望远镜和一台50毫米双筒望远">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-16T12:43:48.000Z">
+<meta property="article:modified_time" content="2025-04-19T03:49:54.975Z">
 <meta property="article:author" content="Luhill Tsing">
-<meta property="article:tag" content="Luhill,Lufeng">
+<meta property="article:tag" content="About">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://luhilltsing.github.io/categories/Projects/">
+<link rel="canonical" href="http://luhilltsing.github.io/qsl/0001">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/Projects/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://luhilltsing.github.io/qsl/0001","path":"/qsl/0001","title":"1"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类: Projects | Luhill Tsing</title>
+<title>1 | Luhill Tsing</title>
   
 
 
@@ -146,7 +148,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -159,6 +161,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%BF%E7%A6%84%E5%B3%B0"><span class="nav-number">1.</span> <span class="nav-text">卿禄峰</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QING-LUFENG"><span class="nav-number">2.</span> <span class="nav-text">QING LUFENG</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%A6%E7%94%9F"><span class="nav-number">2.0.1.</span> <span class="nav-text">学生</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -207,50 +210,115 @@
 
     </div>
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">Projects
-          <small>分类</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://luhilltsing.github.io/qsl/0001">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/portrait.jpg">
+      <meta itemprop="name" content="Luhill Tsing">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luhill Tsing">
+      <meta itemprop="description" content="无限进步">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="1 | Luhill Tsing">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          1
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2025</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-03-16 20:43:48" itemprop="dateCreated datePublished" datetime="2025-03-16T20:43:48+08:00">2025-03-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-04-19 11:49:54" itemprop="dateModified" datetime="2025-04-19T11:49:54+08:00">2025-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/About/" itemprop="url" rel="index"><span itemprop="name">About</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="卿禄峰"><a href="#卿禄峰" class="headerlink" title="卿禄峰"></a>卿禄峰</h2><h2 id="QING-LUFENG"><a href="#QING-LUFENG" class="headerlink" title="QING LUFENG"></a>QING LUFENG</h2><h4 id="学生"><a href="#学生" class="headerlink" title="学生"></a>学生</h4><p>2005年5月出生于湖南邵阳，现居广东清远，嵌入式技术应用专业在校学生。</p>
+<p>阿瓦隆科技工作室（The Studio of Avalon of Science and Technology）创始人和主要负责人。</p>
+<p>HAM，设立有个人业余无线电台BA7KTB，拥有A类业余无线电台操作资质，电台台址位于清远清城。<br>天文爱好者，拥有一台102毫米折射式望远镜和一台50毫米双筒望远镜，天文观测站站址位于邵阳北塔。<br>波段交易者，正在构建一套自己的证券交易理论体系。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">志之所趋无远弗届，犯其至难图其致远</span><br></pre></td></tr></table></figure>
+
+<p>我喜欢在旅途中增长自己的视野，了解和体验不同的文化与民俗，感受独特地理环境下塑造的多样生活方式，品味广阔世界各具特色的美食。<br>我希望在短暂的生命里认识、感受、领略和体会这颗蓝色星球上的壮阔、美好、危险和挑战。</p>
+<p>欢迎你访问我的个人博客！<br>这对我来说是一扇面向全世界互联网用户展示自我的窗口，你可以使用任意一台接入互联网的设备打开此网站。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-03-18T14:16:05+08:00"
-              content="2025-03-18">
-          03-18
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/03/18/XunjiCar/" itemprop="url">
-            <span itemprop="name">寻迹避障及定距离跟随小车</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/About/" rel="tag"># About</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/03/15/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/about/me/" rel="next" title="AboutMe">
+                  AboutMe <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
+
 
 </div>
   </main>

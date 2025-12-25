@@ -22,12 +22,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动寻迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
+    <meta name="description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动循迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="循迹避障及定距离跟随小车">
 <meta property="og:url" content="http://luhilltsing.github.io/2025/03/18/XunjiCar/index.html">
 <meta property="og:site_name" content="Luhill Tsing">
-<meta property="og:description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动寻迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
+<meta property="og:description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动循迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://luhilltsing.github.io/images/02-Renderings-frontage-2D.png">
 <meta property="og:image" content="http://luhilltsing.github.io/images/03-XunjiSystemDesign.png">
@@ -54,7 +54,7 @@
 <meta property="og:image" content="http://luhilltsing.github.io/images/24-XunjiCar-ProgramSystemDesign.png">
 <meta property="og:image" content="http://luhilltsing.github.io/images/25-XunjiCar.png">
 <meta property="article:published_time" content="2025-03-18T06:16:05.000Z">
-<meta property="article:modified_time" content="2025-12-24T15:51:39.835Z">
+<meta property="article:modified_time" content="2025-12-25T06:14:47.588Z">
 <meta property="article:author" content="Luhill Tsing">
 <meta property="article:tag" content="Projects">
 <meta name="twitter:card" content="summary">
@@ -136,7 +136,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/me/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-projects"><a href="/tags/projects/" rel="section"><i class="fa fa-folder fa-fw"></i>projects</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-工程"><a href="/tags/projects/" rel="section"><i class="fa fa-folder fa-fw"></i>工程</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -202,18 +202,19 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+          <a href="/tags/">
         <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -261,7 +262,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="循迹避障及定距离跟随小车 | Luhill Tsing">
-      <meta itemprop="description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动寻迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
+      <meta itemprop="description" content="本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动循迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -283,13 +284,13 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-12-24 23:51:39" itemprop="dateModified" datetime="2025-12-24T23:51:39+08:00">2025-12-24</time>
+      <time title="修改时间：2025-12-25 14:14:47" itemprop="dateModified" datetime="2025-12-25T14:14:47+08:00">2025-12-25</time>
     </span>
 
   
 </div>
 
-            <div class="post-description">本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动寻迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。</div>
+            <div class="post-description">本项目希望设计并制作一个基于STM32F103C8T6核心板的智能小车，具备自动循迹、避障和无线控制功能。小车应能够沿着不规则的黑色轨迹行驶，遇到障碍物时能够自动绕行，并可通过蓝牙模块进行无线控制。</div>
         </div>
       </header>
 
@@ -362,8 +363,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/about/me/" rel="prev" title="AboutMe">
-                  <i class="fa fa-angle-left"></i> AboutMe
+                <a href="/about/" rel="prev" title="About">
+                  <i class="fa fa-angle-left"></i> About
                 </a>
             </div>
             <div class="post-nav-item">

@@ -168,6 +168,9 @@
 <p>参考资料：<br>[1] 妄北y. 基于STM32F103C8T6的智能小车设计：自动寻迹、避障与无线控制全解析 [EB&#x2F;OL]. CSDN博客, 2025-01-13. <a href="https://blog.csdn.net/qq_62634009/article/details/145074327">https://blog.csdn.net/qq_62634009/article/details/145074327</a>.</p>
 <p>最后更新日期：2025-06-25</p>
 ]]></content>
+      <categories>
+        <category>projects</category>
+      </categories>
       <tags>
         <tag>projects</tag>
       </tags>
@@ -190,6 +193,9 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>computer</category>
+      </categories>
       <tags>
         <tag>computer</tag>
       </tags>

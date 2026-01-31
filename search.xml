@@ -274,4 +274,16 @@
         <tag>articles</tag>
       </tags>
   </entry>
+  <entry>
+    <title>测试文章</title>
+    <url>/2026/01/18/pro-test/</url>
+    <content><![CDATA[<p>ces</p>
+]]></content>
+      <categories>
+        <category>projects</category>
+      </categories>
+      <tags>
+        <tag>projects</tag>
+      </tags>
+  </entry>
 </search>

@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"luhilltsing.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
 
 
@@ -55,6 +55,7 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
 <script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous" defer></script>
@@ -298,7 +299,7 @@
 <p><strong>阅读时长</strong>：约 15 分钟</p>
 <p><strong>版权所有</strong> © 2026 Luhill 未经授权禁止转载</p>
 <hr>
-<p><img src="/user_input_files/%E5%81%87%E8%A3%85%E8%BF%99%E6%98%AF%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87.jpg" alt="假装这是一张图片"></p>
+<p><img data-src="/user_input_files/%E5%81%87%E8%A3%85%E8%BF%99%E6%98%AF%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87.jpg" alt="假装这是一张图片"></p>
 <hr>
 <h2 id="一、模板概述"><a href="#一、模板概述" class="headerlink" title="一、模板概述"></a>一、模板概述</h2><h3 id="1-1-模板介绍"><a href="#1-1-模板介绍" class="headerlink" title="1.1 模板介绍"></a>1.1 模板介绍</h3><p>本文档是一份<strong>通用 Hexo + NexT 主题博客文章模板</strong>，旨在为博客作者提供一个功能完备、样式丰富的写作范本。通过从本文档复制内容到您的 <code>_posts/</code> 目录下的 <code>.md</code> 文件中，您可以快速创建具有专业外观和丰富功能的博客文章。</p>
 <p>本模板基于 <strong>Hexo 静态网站生成器</strong> 和 <strong>NexT 主题</strong> 构建，完美兼容 <strong>Gemini</strong> 或 <strong>Pisces</strong> 布局方案。NexT 主题是 Hexo 生态中最受欢迎的主题之一，以其优雅的设计和强大的功能著称。</p>
@@ -556,7 +557,7 @@
 
 <h3 id="6-5-标签页-Tabs"><a href="#6-5-标签页-Tabs" class="headerlink" title="6.5 标签页 (Tabs)"></a>6.5 标签页 (Tabs)</h3><p>通过 Tabs 标签，可以在同一区域展示多块内容，节省页面空间：</p>
 <div class="tabs" id="示例标签组"><ul class="nav-tabs"><li class="tab active"><a href="#示例标签组-1">第一页</a></li><li class="tab"><a href="#示例标签组-2">第二页</a></li><li class="tab"><a href="#示例标签组-3">第三页</a></li></ul><div class="tab-content"><div class="tab-pane active" id="示例标签组-1"><p>这是第一页的内容。你可以在这里写 <strong>Markdown</strong> 语法。</p></div><div class="tab-pane" id="示例标签组-2"><p>这是第二页的内容，包含了代码：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello from tab 2&#x27;</span>);</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="示例标签组-3"><p>这是第三页的内容，可以放图片等。<br><img src="/images/example.jpg" alt="图片替代文字"></p></div></div></div>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Hello from tab 2&#x27;</span>);</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="示例标签组-3"><p>这是第三页的内容，可以放图片等。<br><img data-src="/images/example.jpg" alt="图片替代文字"></p></div></div></div>
 
 <h3 id="6-6-音频与视频"><a href="#6-6-音频与视频" class="headerlink" title="6.6 音频与视频"></a>6.6 音频与视频</h3><p>NexT 支持直接嵌入音频和视频文件（需路径正确）：</p>
 <hr>
@@ -574,10 +575,10 @@
 <p>st&#x3D;&gt;start: 开始<br>e&#x3D;&gt;end: 结束<br>op&#x3D;&gt;operation: 我的操作<br>cond&#x3D;&gt;condition: 确认？</p>
 <p>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op</p>
 <hr>
-<h2 id="八、图片处理"><a href="#八、图片处理" class="headerlink" title="八、图片处理"></a>八、图片处理</h2><h3 id="8-1-普通图片"><a href="#8-1-普通图片" class="headerlink" title="8.1 普通图片"></a>8.1 普通图片</h3><p><img src="/images/next-preview.png" alt="NexT 主题预览"></p>
+<h2 id="八、图片处理"><a href="#八、图片处理" class="headerlink" title="八、图片处理"></a>八、图片处理</h2><h3 id="8-1-普通图片"><a href="#8-1-普通图片" class="headerlink" title="8.1 普通图片"></a>8.1 普通图片</h3><p><img data-src="/images/next-preview.png" alt="NexT 主题预览"></p>
 <h3 id="8-2-带标题的图片"><a href="#8-2-带标题的图片" class="headerlink" title="8.2 带标题的图片"></a>8.2 带标题的图片</h3><p>使用 <code>&lt;center&gt;</code> 标签或 Markdown 的引用语法可以为图片添加说明。</p>
 <h3 id="8-3-图片组"><a href="#8-3-图片组" class="headerlink" title="8.3 图片组"></a>8.3 图片组</h3><p>如果您希望图片以画廊形式展示，可以使用以下标签：</p>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/1.jpg"></div><div class="group-picture-column"><img src="/images/2.jpg"></div></div></div>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img data-src="/images/1.jpg"></div><div class="group-picture-column"><img data-src="/images/2.jpg"></div></div></div>
 
 <p>参数 <code>2-2</code> 表示每行显示 2 张图片，共 2 行。</p>
 <hr>
